@@ -1,0 +1,17 @@
+ScrollReveal().reveal('.hero');
+ScrollReveal().reveal('.hero__waves');
+ScrollReveal().reveal('.modo');
+ScrollReveal().reveal('.logo');
+ScrollReveal().reveal('.img__logo');
+ScrollReveal().reveal('.Title');
+ScrollReveal().reveal('.container');
+ScrollReveal().reveal('.redes__sociales');
+ScrollReveal().reveal('.social');
+ScrollReveal().reveal('.sitio__web');
+ScrollReveal().reveal('.web');
+ScrollReveal().reveal('.title__web');
+ScrollReveal().reveal('.gmail');
+ScrollReveal().reveal('.title__gmail');
+ScrollReveal().reveal('.footer');
+ScrollReveal().reveal('.copy');
+ScrollReveal().reveal('.copy__p');
