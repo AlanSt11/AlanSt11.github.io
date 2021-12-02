@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,700&family=Roboto:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  background-color: white;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(240, 27%, 19%, 0.5), hsla(245, 39%, 28%, 0.5), hsla(246, 55%, 10%, 0.5)), url(./img/portada.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(240, 27%, 19%, 0.5), hsla(245, 39%, 28%, 0.5), hsla(246, 55%, 10%, 0.5)), url(./img/portada.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+    "nav"
+    "content";
+    min-height: 60vh;
+}
+
+.hero__waves{
+    grid-area: content;
+    align-self: end;
+}
+
+.logo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.img__logo{
+  width: 300px;
+  border-radius: 50%;
+}
+
+.Title{
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+      0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+      0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+      0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+      0 0 180px rgba(38, 104, 127, 1);
+      color: rgba(38, 104, 127, 1);
+      font-size: 30px;
+      margin-bottom: 20px;
+}
+
+.container{
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  align-items: center;
+}
+
+.social{
+  width: 50px;
+}
+
+.redes__sociales{
+  text-align: center;
+  align-items: center;
+}
+
+.sitio__web{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.web{
+  padding: 10px 100px;
+  border-radius: 7px;
+  background-color: red;
+}
+
+.title__web{
+  text-decoration: none;
+  color: white;
+}
+
+.web:hover{
+  background-color: rgb(20, 184, 20);
+}
+
+.gmail{
+  padding: 10px 60px;
+  border-radius: 7px;
+  background-color: blue;
+}
+
+.title__gmail{
+  text-decoration: none;
+  color: white;
+}
+
+.footer{
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+
+.copy__p{
+  color: white;
+  font-size: 18px;
+}
+
+@media screen and (max-width:800px) {
+  .img__logo{
+    width: 200px;
+  }
+
+  .web{
+    padding: 10px 80px;
+    border-radius: 7px;
+    background-color: red;
+  }
+
+  .gmail{
+    padding: 10px 40px;
+    border-radius: 7px;
+    background-color: blue;
+  }
+  
+  .title__gmail{
+    text-decoration: none;
+    color: white;
+  }
+
+  .hero{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(240, 27%, 19%, 0.5), hsla(245, 39%, 28%, 0.5), hsla(246, 55%, 10%, 0.5)), url(./img/portada-responsive.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(240, 27%, 19%, 0.5), hsla(245, 39%, 28%, 0.5), hsla(246, 55%, 10%, 0.5)), url(./img/portada-responsive.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+    "nav"
+    "content";
+    min-height: 38vh;
+  }
+}
